@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{c59873bf-24e5-4a9d-9d4c-16d042f53321}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationImplMsw.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationMsw.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShApplicationEntry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShAppWindow.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShWindowFwd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationImplMsw.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationMsw.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShApplication.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShAppWindow.cpp" />
+  </ItemGroup>
+</Project>

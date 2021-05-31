@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{8e0e1b32-3b37-41b7-892d-391b3ee4ba0f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShAppWindow.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShWindowFwd.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationMsw.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationImplMsw.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShAppWindow.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationMsw.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationImplMsw.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

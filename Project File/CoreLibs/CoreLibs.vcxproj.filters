@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\Code\CoreLibs\ShCommonDefines.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\CoreLibs\ShPlatformDefines.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\CoreLibs\ShPrerequisites.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\CoreLibs\ShStandardHeaders.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\CoreLibs\ShTypes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\CoreLibs\ShCoreLibs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Code\CoreLibs\ShCoreLibs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{b0c7ffdd-3070-471e-95c6-566bd8663945}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
