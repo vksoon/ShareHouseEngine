@@ -14,6 +14,8 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationImplMsw.h">
       <Filter>Platform</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShApplicationEntry.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShAppWindow.cpp" />
@@ -23,5 +25,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationImplMsw.cpp">
       <Filter>Platform</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShApplication.cpp" />
   </ItemGroup>
 </Project>
