@@ -7,16 +7,16 @@ enum class EExceptionType : uint8
 {
 	Unkown,
 	FileNotFound,
-	GraphicsKernelException,
+	GraphicsKernel,
 };
 
 static const char* GetExceptionTypeDesc(EExceptionType type)
 {
 	switch (type)
 	{
-	case EExceptionType::FileNotFound :
+	case EExceptionType::FileNotFound:
 		return "FileNotFound";
-	case EExceptionType::GraphicsKernelException :
+	case EExceptionType::GraphicsKernel:
 		return "GraphicsKernelException";
 	default :
 		return "Unkown";
@@ -91,7 +91,7 @@ protected :
 };
 
 class FileNotFoundException : public ExceptionHandler<EExceptionType::FileNotFound> {};
-class GraphicsKernelException : public ExceptionHandler<EExceptionType::GraphicsKernelException> {};
+class GraphicsKernelException : public ExceptionHandler<EExceptionType::GraphicsKernel> {};
 
 #ifndef SH_EXCEPT																			
 #define SH_EXCEPT(type, desc)																\
