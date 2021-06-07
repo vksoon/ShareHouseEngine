@@ -52,13 +52,13 @@ public :
 	{
 	}
 
-	virtual const String& getFullDescription() const
+	virtual const String& GetFullDescription() const
 	{
 		if (mFullDescription.empty())
 		{
 			StringStream desc;
 
-			desc << "bs::framework EXCEPTION(" << mTypeName << "): "
+			desc << "ShareHouse EXCEPTION(" << mTypeName << "): "
 				<< mDescription
 				<< " in " << mSource;
 
@@ -79,7 +79,7 @@ public :
 	virtual const String& GetDescription() const { return mDescription; }
 
 	// implemented from std::exception
-	virtual const char* what() const noexcept override { return getFullDescription().c_str(); }
+	virtual const char* what() const noexcept override { return GetFullDescription().c_str(); }
 
 protected :
 	long mLine = 0;
