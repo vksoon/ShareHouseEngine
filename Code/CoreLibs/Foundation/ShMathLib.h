@@ -85,27 +85,27 @@ floating point bit layouts according to the IEEE 754-1985 and 754-2008 standard
 #define IEEE_FLT_IS_DENORMAL(x)     (((*(const uint32_t *)&x) & 0x7f800000) == 0x00000000 && \
                                     ((*(const uint32_t *)&x) & 0x007fffff) != 0x00000000)
 // degree <-> radian
-#define DEG2RAD(a)                  ((a) * BE1::Math::MulDegreeToRadian)
-#define RAD2DEG(a)                  ((a) * BE1::Math::MulRadianToDegree)
+#define DEG2RAD(a)                  ((a) * Math::MulDegreeToRadian)
+#define RAD2DEG(a)                  ((a) * Math::MulRadianToDegree)
 
 // seconds <-> miliseconds
-#define SEC2MILLI(t)                ((t) * BE1::Math::MulSecondToMilli)
-#define MILLI2SEC(t)                ((t) * BE1::Math::MulMilliToSecond)
+#define SEC2MILLI(t)                ((t) * Math::MulSecondToMilli)
+#define MILLI2SEC(t)                ((t) * Math::MulMilliToSecond)
 
 // seconds <-> microseconds
-#define SEC2MICRO(t)                ((t) * BE1::Math::MulSecondToMicro)
-#define MICRO2SEC(t)                ((t) * BE1::Math::MulMicroToSecond)
+#define SEC2MICRO(t)                ((t) * Math::MulSecondToMicro)
+#define MICRO2SEC(t)                ((t) * Math::MulMicroToSecond)
 
 // seconds <-> nanoseconds
-#define SEC2NANO(t)                 ((t) * BE1::Math::MulSecondToNano)
-#define NANO2SEC(t)                 ((t) * BE1::Math::MulNanoToSecond)
+#define SEC2NANO(t)                 ((t) * Math::MulSecondToNano)
+#define NANO2SEC(t)                 ((t) * Math::MulNanoToSecond)
 
 // degree <-> short value
-#define ANGLE2SHORT(x)              (BE1::Math::FtoiFast((x) * 65536.0f / 360.0f) & 65535)
+#define ANGLE2SHORT(x)              (Math::FtoiFast((x) * 65536.0f / 360.0f) & 65535)
 #define SHORT2ANGLE(x)              ((x) * (360.0f / 65536.0f))
 
 // degree <-> byte value            
-#define ANGLE2BYTE(x)               (BE1::Math::FtoiFast((x) * 256.0f / 360.0f) & 255)
+#define ANGLE2BYTE(x)               (Math::FtoiFast((x) * 256.0f / 360.0f) & 255)
 #define BYTE2ANGLE(x)               ((x) * (360.0f / 256.0f))
 
 #define C_FLOAT_TO_INT(x)           (int)(x)
