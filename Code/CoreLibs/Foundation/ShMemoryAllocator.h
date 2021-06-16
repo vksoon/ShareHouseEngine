@@ -115,7 +115,7 @@ struct Deleter
 template<class _Type>
 _Type* SH_NewA(size_t count)
 {
-	_Type* ptr = (_Type*)Allocate(sizeof(_Type) * count);
+	_Type* ptr = (_Type*)SH_Allocate(sizeof(_Type) * count);
 	for (size_t i = 0; i < count; ++i)
 		::new (&ptr[i]) _Type;
 
