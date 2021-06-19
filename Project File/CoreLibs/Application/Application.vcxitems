@@ -16,6 +16,8 @@
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationImplMsw.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationMsw.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShWindowsApi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShWindowsOutputSerializerConsole.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShApplication.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShApplicationEntry.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShAppWindow.h" />
@@ -24,6 +26,7 @@
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationImplMsw.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShApplicationMsw.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\Platform\ShWindowsOutputSerializerConsole.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShApplication.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Application\ShAppWindow.cpp" />
   </ItemGroup>
