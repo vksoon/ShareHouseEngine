@@ -306,7 +306,7 @@ void AppWindowImplMsw::ToggleFullScreen()
 	mFullScreen = !mFullScreen;
 	SetWindowStyleValues();
 
-	RECT windowRect;
+	RECT windowRect{};
 	if (prevFullScreen)
 	{
 		windowRect.left = mWindowedPosX;

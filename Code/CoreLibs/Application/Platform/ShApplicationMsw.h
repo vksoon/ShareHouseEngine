@@ -44,10 +44,11 @@ void AppMsw::Main(const char* title, const AppSettings& settingsFunc)
 	Application::PrepareLaunch();
 
 	Settings entrySettings;
-	Application::SetupLaunch(&entrySettings, title, 0, nullptr);
 
 	if (settingsFunc)
 		settingsFunc(&entrySettings);
+
+	Application::SetupLaunch(&entrySettings, title, 0, nullptr);
 
 	if (entrySettings.ShouldQuit())
 		return;
