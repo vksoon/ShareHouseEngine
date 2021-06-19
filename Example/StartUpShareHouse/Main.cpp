@@ -10,6 +10,7 @@ void PrepareSettings(App::Settings* settings)
 	settings->SetFrameRate(60.0f);
 	settings->SetResizable();
 	settings->SetFullScreen(false);
+	settings->SetShouldUseLogSystem(true);
 }
 
 SHAREHOUSE_APP_ENTRY(App, "ShareHouse App", PrepareSettings)

@@ -58,6 +58,9 @@ public:
 		void SetShouldQuit(bool shouldQuit = true) { mShouldQuit = shouldQuit; }
 		bool ShouldQuit() const { return mShouldQuit; }
 
+		void SetShouldUseLogSystem(bool UseLogSystem = true) { mUseLogSystem = UseLogSystem; }
+		bool ShouldUseLogSystem() const { return mUseLogSystem; }
+
 	protected:
 		AppWindow::Format mDefaultWindowFormat;
 		String			  mTitle;
@@ -65,6 +68,7 @@ public:
 		float			  mFrameRate = 60;
 		bool			  mQuitOnLastWindowClose = true;
 		bool			  mShouldQuit = false;
+		bool			  mUseLogSystem = false;
 
 		friend Application;
 	};

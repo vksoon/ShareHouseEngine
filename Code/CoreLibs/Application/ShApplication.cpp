@@ -1,5 +1,5 @@
 #include "ShApplication.h"
-
+#include "Foundation/ShLog.h"
 SH_NAMESPACE_BEGIN
 
 Application::Settings* Application::StartUpSettings;
@@ -14,12 +14,28 @@ void Application::PrepareLaunch()
 
 void Application::SetupLaunch(Settings* settings, const char* title, int32 argc, char* const argv[])
 {
+	StartUpSettings = settings;
+
 	if (settings->GetTitle().empty())
 	{
 		settings->SetTitle(title);
 	}
 
-	StartUpSettings = settings;
+	if (settings->mUseLogSystem)
+	{
+		LogOutputDevice::LogOutputInitInfo info;
+#if USE_WINDOWS_COSOLE
+		info.bUseConsoleOutput = true;
+#endif
+		LogOutputDevice::GetLogger().Initialize(info);
+
+
+		String Test("Hi Hello Log");
+
+		SH_LOG(LogStart, Fatal, " SH 로그 예제 %d %f %s", 1, 1.f, Test.c_str());
+		SH_LOG(LogTemp, Warning, " SH 로그 예제 %d %f %s", 1, 1.f, Test.c_str());
+		SH_LOG(LogStart, Error, " SH 로그 예제 %d %f %s", 1, 1.f, Test.c_str());
+	}
 }
 
 void Application::ExecuteLaunch()
@@ -40,6 +56,8 @@ void Application::ExecuteLaunch()
 
 void Application::CleanupLaunch()
 {
+	LogOutputDevice::GetLogger().TearDown();
+
 }
 
 Application::Application()
