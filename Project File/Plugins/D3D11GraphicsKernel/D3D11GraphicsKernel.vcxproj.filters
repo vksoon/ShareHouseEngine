@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Device">
+      <UniqueIdentifier>{99206f9b-a8e9-4e73-83e1-9bdc461d7583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{4335f225-1607-4a68-a439-17974fda2bde}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Code\Plugins\D3D11GraphicsKernel\Device.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Plugins\D3D11GraphicsKernel\CommonDefines.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Code\Plugins\D3D11GraphicsKernel\Device.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
