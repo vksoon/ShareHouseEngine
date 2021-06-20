@@ -29,7 +29,7 @@ String CategoryToString(EAlarm category)
 
 	return Output;
 }
-// FOutputDevice interface.
+
 void WindowsOutputSerializerConsole::Serialize(const String& category, const String& output, EAlarm alarm)
 {
 	Serialize(category, output, alarm, 0);
