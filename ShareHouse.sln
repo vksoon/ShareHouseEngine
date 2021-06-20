@@ -19,11 +19,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{4B
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StartUpShareHouse", "Example\StartUpShareHouse\StartUpShareHouse.vcxproj", "{4B2FC386-A37C-44F6-8930-67E67CE7BE0C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphicsKernel", "Project File\CoreLibs\GraphicsKernel\GraphicsKernel.vcxitems", "{BDABC75E-8B05-47BF-8A75-2D28E72E97E7}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Project File\CoreLibs\Foundation\Foundation.vcxitems*{64d12732-99f5-401d-891b-411d3fbac57e}*SharedItemsImports = 9
 		Project File\CoreLibs\Application\Application.vcxitems*{676948d0-ca18-46ac-82ce-35ef915fce31}*SharedItemsImports = 4
 		Project File\CoreLibs\Foundation\Foundation.vcxitems*{676948d0-ca18-46ac-82ce-35ef915fce31}*SharedItemsImports = 4
+		Project File\CoreLibs\GraphicsKernel\GraphicsKernel.vcxitems*{676948d0-ca18-46ac-82ce-35ef915fce31}*SharedItemsImports = 4
+		Project File\CoreLibs\GraphicsKernel\GraphicsKernel.vcxitems*{bdabc75e-8b05-47bf-8a75-2d28e72e97e7}*SharedItemsImports = 9
 		Project File\CoreLibs\Application\Application.vcxitems*{c59873bf-24e5-4a9d-9d4c-16d042f53321}*SharedItemsImports = 9
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +63,7 @@ Global
 		{C59873BF-24E5-4A9D-9D4C-16D042F53321} = {A7324957-A713-4491-AA1E-F7BC14F9A877}
 		{64D12732-99F5-401D-891B-411D3FBAC57E} = {A7324957-A713-4491-AA1E-F7BC14F9A877}
 		{4B2FC386-A37C-44F6-8930-67E67CE7BE0C} = {4B1E6F21-916F-4683-BDE9-B86F3EEEF6AA}
+		{BDABC75E-8B05-47BF-8A75-2D28E72E97E7} = {A7324957-A713-4491-AA1E-F7BC14F9A877}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6D7C022-4DE3-4A44-B98A-5D05F46AA0C6}
