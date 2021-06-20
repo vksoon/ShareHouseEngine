@@ -21,12 +21,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StartUpShareHouse", "Exampl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphicsKernel", "Project File\CoreLibs\GraphicsKernel\GraphicsKernel.vcxitems", "{BDABC75E-8B05-47BF-8A75-2D28E72E97E7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "D3D11GraphicsKernel", "Project File\Plugins\D3D11GraphicsKernel\D3D11GraphicsKernel.vcxproj", "{75518AD4-9CA4-492B-9E8A-508E5530FB1B}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Project File\CoreLibs\Foundation\Foundation.vcxitems*{64d12732-99f5-401d-891b-411d3fbac57e}*SharedItemsImports = 9
 		Project File\CoreLibs\Application\Application.vcxitems*{676948d0-ca18-46ac-82ce-35ef915fce31}*SharedItemsImports = 4
 		Project File\CoreLibs\Foundation\Foundation.vcxitems*{676948d0-ca18-46ac-82ce-35ef915fce31}*SharedItemsImports = 4
-		Project File\CoreLibs\GraphicsKernel\GraphicsKernel.vcxitems*{676948d0-ca18-46ac-82ce-35ef915fce31}*SharedItemsImports = 4
 		Project File\CoreLibs\GraphicsKernel\GraphicsKernel.vcxitems*{bdabc75e-8b05-47bf-8a75-2d28e72e97e7}*SharedItemsImports = 9
 		Project File\CoreLibs\Application\Application.vcxitems*{c59873bf-24e5-4a9d-9d4c-16d042f53321}*SharedItemsImports = 9
 	EndGlobalSection
@@ -53,6 +54,14 @@ Global
 		{4B2FC386-A37C-44F6-8930-67E67CE7BE0C}.Release|x64.Build.0 = Release|x64
 		{4B2FC386-A37C-44F6-8930-67E67CE7BE0C}.Release|x86.ActiveCfg = Release|Win32
 		{4B2FC386-A37C-44F6-8930-67E67CE7BE0C}.Release|x86.Build.0 = Release|Win32
+		{75518AD4-9CA4-492B-9E8A-508E5530FB1B}.Debug|x64.ActiveCfg = Debug|x64
+		{75518AD4-9CA4-492B-9E8A-508E5530FB1B}.Debug|x64.Build.0 = Debug|x64
+		{75518AD4-9CA4-492B-9E8A-508E5530FB1B}.Debug|x86.ActiveCfg = Debug|Win32
+		{75518AD4-9CA4-492B-9E8A-508E5530FB1B}.Debug|x86.Build.0 = Debug|Win32
+		{75518AD4-9CA4-492B-9E8A-508E5530FB1B}.Release|x64.ActiveCfg = Release|x64
+		{75518AD4-9CA4-492B-9E8A-508E5530FB1B}.Release|x64.Build.0 = Release|x64
+		{75518AD4-9CA4-492B-9E8A-508E5530FB1B}.Release|x86.ActiveCfg = Release|Win32
+		{75518AD4-9CA4-492B-9E8A-508E5530FB1B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +73,7 @@ Global
 		{64D12732-99F5-401D-891B-411D3FBAC57E} = {A7324957-A713-4491-AA1E-F7BC14F9A877}
 		{4B2FC386-A37C-44F6-8930-67E67CE7BE0C} = {4B1E6F21-916F-4683-BDE9-B86F3EEEF6AA}
 		{BDABC75E-8B05-47BF-8A75-2D28E72E97E7} = {A7324957-A713-4491-AA1E-F7BC14F9A877}
+		{75518AD4-9CA4-492B-9E8A-508E5530FB1B} = {03D580BA-5295-45C8-8F5A-6C096E07B010}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6D7C022-4DE3-4A44-B98A-5D05F46AA0C6}
