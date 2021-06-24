@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Code\Plugins\D3D11GraphicsKernel\CommonDefines.h" />
     <ClInclude Include="..\..\..\Code\Plugins\D3D11GraphicsKernel\Device.h" />
+    <ClInclude Include="..\..\..\Code\Plugins\D3D11GraphicsKernel\ShD3D11CommonDefines.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\Plugins\D3D11GraphicsKernel\Device.cpp" />

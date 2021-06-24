@@ -12,7 +12,7 @@
     <ClInclude Include="..\..\..\Code\Plugins\D3D11GraphicsKernel\Device.h">
       <Filter>Device</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\Plugins\D3D11GraphicsKernel\CommonDefines.h">
+    <ClInclude Include="..\..\..\Code\Plugins\D3D11GraphicsKernel\ShD3D11CommonDefines.h">
       <Filter>Common</Filter>
     </ClInclude>
   </ItemGroup>
