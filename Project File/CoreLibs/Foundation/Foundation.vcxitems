@@ -14,8 +14,10 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShDynLibManager.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShException.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShFileSystem.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShGlobalInstance.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShLog.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShMathLib.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShMatrix.h" />
@@ -28,6 +30,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShVector.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShDynLibManager.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShException.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShFileSystem.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShLog.cpp" />
