@@ -69,6 +69,12 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShOutputSerializer.h">
       <Filter>Debug</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShGlobalInstance.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShDynLibManager.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShString.cpp">
@@ -100,6 +106,9 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShOutputSerializer.cpp">
       <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\CoreLibs\Foundation\ShDynLibManager.cpp">
+      <Filter>Utility</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
